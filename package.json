@@ -1,0 +1,10 @@
+{
+  "name": "sass-cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "sass src/main.scss build/index.css --watch",
+    "start": "live-server"
+  }
+}
