@@ -8,6 +8,29 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span></label
+      >
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>Features</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="images/logo.png" alt="logo" class="header__logo" />
@@ -19,7 +42,7 @@
           <span class="heading-primary--sub">Sub Heading</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Button</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Button</a>
       </div>
     </header>
     <main>
@@ -105,7 +128,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Secondary Title
@@ -117,10 +140,32 @@
               <div
                 class="card__side card__side--front card__side--front-primary"
               >
-                card1
+                <div class="card__picture card__picture--primary">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--main"
+                    >card-heading</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>el1</li>
+                    <li>el2</li>
+                    <li>el3</li>
+                    <li>el4</li>
+                    <li>el5</li>
+                  </ul>
+                </div>
               </div>
               <div class="card__side card__side--back card__side--back-primary">
-                card1
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">1£</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">book</a>
+                </div>
               </div>
             </div>
           </div>
@@ -129,12 +174,34 @@
               <div
                 class="card__side card__side--front card__side--front-secondary"
               >
-                card1
+                <div class="card__picture card__picture--secondary">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--main"
+                    >card-heading</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>el1</li>
+                    <li>el2</li>
+                    <li>el3</li>
+                    <li>el4</li>
+                    <li>el5</li>
+                  </ul>
+                </div>
               </div>
               <div
                 class="card__side card__side--back card__side--back-secondary"
               >
-                card1
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">1£</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">book</a>
+                </div>
               </div>
             </div>
           </div>
@@ -143,18 +210,221 @@
               <div
                 class="card__side card__side--front card__side--front-tertiary"
               >
-                card1
+                <div class="card__picture card__picture--tertiary">
+                  &nbsp;
+                </div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--main"
+                    >card-heading</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>el1</li>
+                    <li>el2</li>
+                    <li>el3</li>
+                    <li>el4</li>
+                    <li>el5</li>
+                  </ul>
+                </div>
               </div>
               <div
                 class="card__side card__side--back card__side--back-tertiary"
               >
-                card1
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">1£</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">book</a>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Button</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="images/video.mp4" type="video/mp4" />
+            <source src="images/video.webm" type="video/webm" />
+            Your browser is not supported
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">secondary heading</h2>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="images/header.jpg"
+                alt="story-image"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Name Surname</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                tertiary heading
+              </h3>
+              <p>
+                text heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                here
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="images/header.jpg"
+                alt="story-image"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Name Surname</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                tertiary heading
+              </h3>
+              <p>
+                text heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                heretext heretext heretext heretext heretext heretext heretext
+                here
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-center-text u-margin-bottom-medium">
+                  <h2 class="heading-secondary">
+                    Secondary Title
+                  </h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="input1"
+                      name="radiogroup"
+                    />
+                    <label for="input1" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      input1
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="input2"
+                      name="radiogroup"
+                    />
+                    <label for="input2" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      input2</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn--green">Button</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="" alt="" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">item</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">item</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">item</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="footer__copyright">copyright &copy;</div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="images/header.jpg" alt="image left" class="popup__img" />
+          <img src="images/header.jpg" alt="image left" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            secondary heading
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            tertiary &ndash; heading
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            doloribus odit? Officia adipisci explicabo eveniet quibusdam nisi
+            sed cupiditate veniam at hic repellat nobis, natus aliquam
+            molestiae, magnam perspiciatis. Voluptate.
+          </p>
+          <a href="#" class="btn btn--green">button</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">col1</div>
